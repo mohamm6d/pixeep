@@ -114,6 +114,18 @@ $wp_customize->add_control( 'acoustics_hero_section_link',
     )
 );
 
+
+
+
+
+
+
+
+
+
+
+
+
 $wp_customize->add_section( 'acoustics_featured_section', array(
 		'title'      =>  esc_html__('Featured Section', 'acoustics'),
 		'priority'   =>  5,
@@ -143,7 +155,7 @@ if( class_exists( 'WooCommerce' ) ):
 endif;
 
 if( $acoustic_woocommerce ):
-	for( $i = 0; $i < 3; $i++) {
+	for( $i = 0; $i < 4; $i++) {
 
 		$wp_customize->add_setting( 'acoustics_featured_categories_'.$i , array(
 				'default'     		=> 0,
@@ -435,6 +447,80 @@ $wp_customize->add_control( 'acoustics_values_category', array(
 		'choices'     => $acoustics_collections,
 	)
 );
+
+
+
+/**
+ * Final image before footer
+ * 
+ */
+$wp_customize->get_section('bfooter_image')->panel = 'acoustics_landing_panel';
+$wp_customize->get_section('bfooter_image')->title = esc_html__( 'Last Section', 'acoustics');
+$wp_customize->get_section('bfooter_image')->priority = 35;
+
+$wp_customize->add_setting( 'acoustics_bfooter_section_enable', array(
+		'default'             => false,
+		'transport' 		  => 'refresh',
+		'sanitize_callback'   => 'acoustics_sanitize_checkbox',
+	)
+);
+
+$wp_customize->add_control( 'acoustics_bfooter_section_enable' , array(
+		'label'         => esc_html__( 'Enable Last Section', 'acoustics' ),
+		'type'			=> 'checkbox',
+		'section'       => 'bfooter_image',
+		'priority'      => 1,
+	)
+);
+
+$wp_customize->add_setting( 'acoustics_bfooter_section_title', array(
+	 'sanitize_callback' => 'sanitize_text_field'
+	)
+);
+
+$wp_customize->add_control( 'acoustics_bfooter_section_title',
+    array(
+        'label'    => esc_html__( 'Last Section Caption Title', 'acoustics' ),
+        'section'  => 'bfooter_image',
+        'settings' => 'acoustics_bfooter_section_title',
+        'type'     => 'text',
+		'priority'      => 5,
+    )
+);
+
+$wp_customize->add_setting( 'acoustics_bfooter_section_details', array(
+	 'sanitize_callback' => 'sanitize_text_field'
+	)
+);
+
+$wp_customize->add_control( 'acoustics_bfooter_section_details', array(
+        'label'    => esc_html__( 'Last Section Caption Details', 'acoustics' ),
+        'section'  => 'bfooter_image',
+        'settings' => 'acoustics_bfooter_section_details',
+        'type'     => 'text',
+		'priority'      => 10,
+    )
+);
+
+$wp_customize->add_setting( 'acoustics_bfooter_section_link', array(
+	 'sanitize_callback' => 'esc_url_raw'
+	)
+);
+
+$wp_customize->add_control( 'acoustics_bfooter_section_link',
+    array(
+        'label'    => esc_html__( 'Last Section Button Link', 'acoustics' ),
+        'section'  => 'bfooter_image',
+        'settings' => 'acoustics_bfooter_section_link',
+        'type'     => 'url',
+		'priority'      => 15,
+    )
+);
+
+
+
+
+
 
 
 /*-------------------------------------
