@@ -15,7 +15,7 @@
  * @version     1.0.0
  *
  */
-  
+
 get_header();
 $acoustics_layout = get_theme_mod( 'acoustics_post_layout', 'right-sidebar' );
 $acoustics_class = acoustics_layout_classes( $acoustics_layout );
