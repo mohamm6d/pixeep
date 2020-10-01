@@ -31,7 +31,7 @@ get_header( 'shop' );
 
 			<div class="col-xs-6 text-right">
 				<?php
-					do_action( 'acoustics_breadcrumb' );
+					do_action( 'pixeep_breadcrumb' );
 				?>
 			</div>
 		</div>

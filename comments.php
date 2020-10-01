@@ -9,7 +9,7 @@
  *
  * @author      CodeGearThemes
  * @category    WordPress
- * @package     Acoustics
+ * @package     pixeep
  * @version     1.0.0
  *
  */
@@ -32,11 +32,11 @@ if ( post_password_required() ) {
 		?>
 		<h2 class="comments-title">
 			<?php
-			$acoustics_comment_count = get_comments_number();
-			if ( '1' === $acoustics_comment_count ) {
+			$pixeep_comment_count = get_comments_number();
+			if ( '1' === $pixeep_comment_count ) {
   printf(
 					/* translators: 1: title. */
-					esc_html__( 'One thought on &ldquo;%1$s&rdquo;', 'acoustics' ),
+					esc_html__( 'One thought on &ldquo;%1$s&rdquo;', 'pixeep' ),
 					'<span>' . get_the_title() . '</span>'
 				);
 }
@@ -44,8 +44,8 @@ if ( post_password_required() ) {
 else {
   printf( // WPCS: XSS OK.
 					/* translators: 1: comment count number, 2: title. */
-					esc_html( _nx( '%1$s thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', $acoustics_comment_count, 'comments title', 'acoustics' ) ),
-					number_format_i18n( $acoustics_comment_count ),
+					esc_html( _nx( '%1$s thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', $pixeep_comment_count, 'comments title', 'pixeep' ) ),
+					number_format_i18n( $pixeep_comment_count ),
 					'<span>' . get_the_title() . '</span>'
 				);
 }
@@ -70,7 +70,7 @@ else {
 		// If comments are closed and there are comments, let's leave a little note, shall we?
 		if ( ! comments_open() ) :
 			?>
-			<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'acoustics' ); ?></p>
+			<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'pixeep' ); ?></p>
 			<?php
 		endif;
 

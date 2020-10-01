@@ -8,7 +8,7 @@
  *
  * @author      CodeGearThemes
  * @category    WordPress
- * @package     Acoustics
+ * @package     pixeep
  * @version     1.0.0
  *
  */
@@ -26,14 +26,14 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'acoustics' ); ?></a>
-    <?php do_action( 'acoustics_before_header' ); ?>
+	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'pixeep' ); ?></a>
+    <?php do_action( 'pixeep_before_header' ); ?>
 
 	<header id="masthead" class="site-header">
 	  
 		   <?php get_template_part( 'template-parts/header/header', 'default' ); ?>
  	</header><!-- #masthead -->
 
-	<?php do_action( 'acoustics_after_header' ); ?>
+	<?php do_action( 'pixeep_after_header' ); ?>
 
 	<div id="content" class="site-content">

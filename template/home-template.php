@@ -4,13 +4,13 @@
 *
 * @author      CodeGearThemes
 * @category    WordPress
-* @package     Acoustics
+* @package     pixeep
 * @version     1.0.0
 *
 **/
 get_header();
 
-	$sections = acoustics_home_sections();
+	$sections = pixeep_home_sections();
 	foreach( $sections as $block){
 	    $section =  $block['section'];
 		$partials = $block['parts'];

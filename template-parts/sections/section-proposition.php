@@ -5,11 +5,11 @@
  *
  * @author      CodeGearThemes
  * @category    WordPress
- * @package     Acoustics
+ * @package     pixeep
  * @version     1.0.0
  *
  */
- $valuesCategory = get_theme_mod( 'acoustics_values_category', '0' );
+ $valuesCategory = get_theme_mod( 'pixeep_values_category', '0' );
 ?>
 <div class="container store-features">
 	<div class="row">
@@ -65,8 +65,8 @@
 							<div class="proposition--item-caption">
 							  <h5 class="proposition--item-title"><?php echo esc_html( get_the_title() ); ?></h5>
 							  <?php
-							   	$acoustic_content = get_the_content();
-							  	if( ! empty( $acoustic_content ) ): ?>
+							   	$pixeep_content = get_the_content();
+							  	if( ! empty( $pixeep_content ) ): ?>
 							  <div class="proposition--item-desc"><?php echo get_the_content(); ?></div>
 							  <?php endif; ?>
 							</div>

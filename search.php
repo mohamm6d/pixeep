@@ -6,19 +6,19 @@
  *
  * @author      CodeGearThemes
  * @category    WordPress
- * @package     Acoustics
+ * @package     pixeep
  * @version     1.0.0
  *
  */
 
 get_header();
-$acoustics_layout = get_theme_mod( 'acoustics_archive_layout', 'left-sidebar' );
-$acoustics_class = acoustics_layout_classes( $acoustics_layout );
+$pixeep_layout = get_theme_mod( 'pixeep_archive_layout', 'left-sidebar' );
+$pixeep_class = pixeep_layout_classes( $pixeep_layout );
 ?>
 <div class="section-default section--search-template">
 	<div class="container">
 		<div class="row">
-			<section id="primary" class="<?php echo esc_attr( $acoustics_class ); ?> col-xs-12 content-area">
+			<section id="primary" class="<?php echo esc_attr( $pixeep_class ); ?> col-xs-12 content-area">
 				<main id="main" class="site-main">
 
 				<?php if ( have_posts() ) : ?>
@@ -27,7 +27,7 @@ $acoustics_class = acoustics_layout_classes( $acoustics_layout );
 						<h1 class="page-title">
 							<?php
 							/* translators: %s: search query. */
-							printf( esc_html__( 'Search Results for: %s', 'acoustics' ), '<span>' . get_search_query() . '</span>' );
+							printf( esc_html__( 'Search Results for: %s', 'pixeep' ), '<span>' . get_search_query() . '</span>' );
 							?>
 						</h1>
 					</header><!-- .page-header -->
@@ -59,7 +59,7 @@ $acoustics_class = acoustics_layout_classes( $acoustics_layout );
 			</section><!-- #primary -->
 
 			<?php
-				if( $acoustics_layout != 'no-sidebar' ):
+				if( $pixeep_layout != 'no-sidebar' ):
 					get_sidebar();
 				endif;
 			?>

@@ -3,7 +3,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Acoustics 1.0.0\n"
+"Project-Id-Version: pixeep 1.0.0\n"
 "Report-Msgid-Bugs-To: https://www.codegearthemes.com/pages/contact/\n"
 "POT-Creation-Date: 2019-06-30 16:32+0000\n"
 "MIME-Version: 1.0\n"
@@ -76,15 +76,15 @@ msgctxt "submit button"
 msgid "Search"
 msgstr ""
 
-#: app/acoustics-plugin.php:11
+#: app/pixeep-plugin.php:11
 msgid "Everest Forms"
 msgstr ""
 
-#: app/acoustics-plugin.php:18
+#: app/pixeep-plugin.php:18
 msgid "WooCommerce"
 msgstr ""
 
-#: inc/acoustics-functions.php:57 inc/acoustics-functions.php:73
+#: inc/pixeep-functions.php:57 inc/pixeep-functions.php:73
 msgid "Continue reading"
 msgstr ""
 
@@ -232,8 +232,8 @@ msgid_plural "%d items"
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/woocommerce.php:346 inc/core/acoustics-customizer.php:239
-#: inc/core/acoustics-customizer.php:316
+#: inc/woocommerce.php:346 inc/core/pixeep-customizer.php:239
+#: inc/core/pixeep-customizer.php:316
 msgid "Select Category"
 msgstr ""
 
@@ -279,197 +279,197 @@ msgstr ""
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr ""
 
-#: inc/core/acoustics-customizer.php:16
+#: inc/core/pixeep-customizer.php:16
 msgid "Color Schema"
 msgstr ""
 
-#: inc/core/acoustics-customizer.php:17
+#: inc/core/pixeep-customizer.php:17
 msgid "Color schema settings"
 msgstr ""
 
-#: inc/core/acoustics-customizer.php:23
+#: inc/core/pixeep-customizer.php:23
 msgid "Header Color"
 msgstr ""
 
-#: inc/core/acoustics-customizer.php:26
+#: inc/core/pixeep-customizer.php:26
 msgid "Body Color"
 msgstr ""
 
-#: inc/core/acoustics-customizer.php:33
+#: inc/core/pixeep-customizer.php:33
 msgid "Social Profiles"
 msgstr ""
 
-#: inc/core/acoustics-customizer.php:34
+#: inc/core/pixeep-customizer.php:34
 msgid "Social settings"
 msgstr ""
 
-#: inc/core/acoustics-customizer.php:40
+#: inc/core/pixeep-customizer.php:40
 msgid "Social Links"
 msgstr ""
 
-#: inc/core/acoustics-customizer.php:65
+#: inc/core/pixeep-customizer.php:65
 msgid "Header Settings"
 msgstr ""
 
-#: inc/core/acoustics-customizer.php:66
+#: inc/core/pixeep-customizer.php:66
 msgid "Header section & settings"
 msgstr ""
 
-#: inc/core/acoustics-customizer.php:77
+#: inc/core/pixeep-customizer.php:77
 msgid "Home Sections"
 msgstr ""
 
-#: inc/core/acoustics-customizer.php:78
+#: inc/core/pixeep-customizer.php:78
 msgid "Home / Landing page settings"
 msgstr ""
 
-#: inc/core/acoustics-customizer.php:84
+#: inc/core/pixeep-customizer.php:84
 msgid "Hero Section"
 msgstr ""
 
-#: inc/core/acoustics-customizer.php:94
+#: inc/core/pixeep-customizer.php:94
 msgid "Caption Title"
 msgstr ""
 
-#: inc/core/acoustics-customizer.php:108
+#: inc/core/pixeep-customizer.php:108
 msgid "Caption Details"
 msgstr ""
 
-#: inc/core/acoustics-customizer.php:123 inc/core/acoustics-customizer.php:200
+#: inc/core/pixeep-customizer.php:123 inc/core/pixeep-customizer.php:200
 msgid "Button Link"
 msgstr ""
 
-#: inc/core/acoustics-customizer.php:132
+#: inc/core/pixeep-customizer.php:132
 msgid "Featured Section"
 msgstr ""
 
-#: inc/core/acoustics-customizer.php:146 inc/core/acoustics-customizer.php:224
-#: inc/core/acoustics-customizer.php:262 inc/core/acoustics-customizer.php:301
-#: inc/core/acoustics-customizer.php:339 inc/core/acoustics-customizer.php:382
+#: inc/core/pixeep-customizer.php:146 inc/core/pixeep-customizer.php:224
+#: inc/core/pixeep-customizer.php:262 inc/core/pixeep-customizer.php:301
+#: inc/core/pixeep-customizer.php:339 inc/core/pixeep-customizer.php:382
 msgid "Enable Section"
 msgstr ""
 
-#: inc/core/acoustics-customizer.php:162 inc/core/acoustics-customizer.php:399
+#: inc/core/pixeep-customizer.php:162 inc/core/pixeep-customizer.php:399
 msgid "Upload image"
 msgstr ""
 
-#: inc/core/acoustics-customizer.php:175 inc/core/acoustics-customizer.php:413
+#: inc/core/pixeep-customizer.php:175 inc/core/pixeep-customizer.php:413
 msgid "Title"
 msgstr ""
 
-#: inc/core/acoustics-customizer.php:187 inc/core/acoustics-customizer.php:426
+#: inc/core/pixeep-customizer.php:187 inc/core/pixeep-customizer.php:426
 msgid "Content"
 msgstr ""
 
-#: inc/core/acoustics-customizer.php:211
+#: inc/core/pixeep-customizer.php:211
 #: template-parts/sections/section-newarrival.php:16
 msgid "New Arrivals"
 msgstr ""
 
-#: inc/core/acoustics-customizer.php:240 inc/core/acoustics-customizer.php:317
+#: inc/core/pixeep-customizer.php:240 inc/core/pixeep-customizer.php:317
 msgid "Display product from the selected product category as new arrival."
 msgstr ""
 
-#: inc/core/acoustics-customizer.php:248
+#: inc/core/pixeep-customizer.php:248
 msgid "Featured Category"
 msgstr ""
 
-#: inc/core/acoustics-customizer.php:278 inc/core/acoustics-customizer.php:356
+#: inc/core/pixeep-customizer.php:278 inc/core/pixeep-customizer.php:356
 msgid "Category"
 msgstr ""
 
-#: inc/core/acoustics-customizer.php:279 inc/core/acoustics-customizer.php:357
+#: inc/core/pixeep-customizer.php:279 inc/core/pixeep-customizer.php:357
 msgid "Display product category."
 msgstr ""
 
-#: inc/core/acoustics-customizer.php:288
+#: inc/core/pixeep-customizer.php:288
 #: template-parts/sections/section-bestseller.php:16
 msgid "Best Sellers"
 msgstr ""
 
-#: inc/core/acoustics-customizer.php:325
+#: inc/core/pixeep-customizer.php:325
 msgid "Category Grid"
 msgstr ""
 
-#: inc/core/acoustics-customizer.php:368
+#: inc/core/pixeep-customizer.php:368
 msgid "Proposition"
 msgstr ""
 
-#: inc/core/acoustics-customizer.php:435
+#: inc/core/pixeep-customizer.php:435
 msgid "Landing Page"
 msgstr ""
 
-#: inc/core/acoustics-customizer.php:442
+#: inc/core/pixeep-customizer.php:442
 msgid "Footer Settings"
 msgstr ""
 
-#: inc/core/acoustics-customizer.php:443
+#: inc/core/pixeep-customizer.php:443
 msgid "Footer section & settings"
 msgstr ""
 
-#: inc/core/acoustics-customizer.php:449
+#: inc/core/pixeep-customizer.php:449
 msgid "Copyright Setting"
 msgstr ""
 
-#: inc/core/acoustics-customizer.php:461
+#: inc/core/pixeep-customizer.php:461
 msgid "Copyright Text"
 msgstr ""
 
-#: inc/core/acoustics-customizer.php:470
+#: inc/core/pixeep-customizer.php:470
 msgid "Layout Settings"
 msgstr ""
 
-#: inc/core/acoustics-customizer.php:471
+#: inc/core/pixeep-customizer.php:471
 msgid "Archive, post & page layout settings"
 msgstr ""
 
-#: inc/core/acoustics-customizer.php:478 inc/core/acoustics-customizer.php:494
+#: inc/core/pixeep-customizer.php:478 inc/core/pixeep-customizer.php:494
 msgid "Archive Sidebar"
 msgstr ""
 
-#: inc/core/acoustics-customizer.php:505 inc/core/acoustics-customizer.php:521
+#: inc/core/pixeep-customizer.php:505 inc/core/pixeep-customizer.php:521
 msgid "Page Sidebar"
 msgstr ""
 
-#: inc/core/acoustics-customizer.php:532 inc/core/acoustics-customizer.php:548
+#: inc/core/pixeep-customizer.php:532 inc/core/pixeep-customizer.php:548
 msgid "Post Sidebar"
 msgstr ""
 
-#: inc/widgets/acoustics-widgets.php:13
+#: inc/widgets/pixeep-widgets.php:13
 msgid "Sidebar"
 msgstr ""
 
-#: inc/widgets/acoustics-widgets.php:15 inc/widgets/acoustics-widgets.php:26
+#: inc/widgets/pixeep-widgets.php:15 inc/widgets/pixeep-widgets.php:26
 msgid "Add widgets here."
 msgstr ""
 
-#: inc/widgets/acoustics-widgets.php:24
+#: inc/widgets/pixeep-widgets.php:24
 msgid "Shop Sidebar"
 msgstr ""
 
-#: inc/widgets/acoustics-widgets.php:35
+#: inc/widgets/pixeep-widgets.php:35
 msgid "Footer Column I "
 msgstr ""
 
-#: inc/widgets/acoustics-widgets.php:37 inc/widgets/acoustics-widgets.php:47
-#: inc/widgets/acoustics-widgets.php:57 inc/widgets/acoustics-widgets.php:67
-#: inc/widgets/acoustics-widgets.php:77
+#: inc/widgets/pixeep-widgets.php:37 inc/widgets/pixeep-widgets.php:47
+#: inc/widgets/pixeep-widgets.php:57 inc/widgets/pixeep-widgets.php:67
+#: inc/widgets/pixeep-widgets.php:77
 msgid "Footer widget that appears on the sub-footer."
 msgstr ""
 
-#: inc/widgets/acoustics-widgets.php:45
+#: inc/widgets/pixeep-widgets.php:45
 msgid "Footer Column II "
 msgstr ""
 
-#: inc/widgets/acoustics-widgets.php:55
+#: inc/widgets/pixeep-widgets.php:55
 msgid "Footer Column III"
 msgstr ""
 
-#: inc/widgets/acoustics-widgets.php:65
+#: inc/widgets/pixeep-widgets.php:65
 msgid "Footer Column IV"
 msgstr ""
 
-#: inc/widgets/acoustics-widgets.php:75
+#: inc/widgets/pixeep-widgets.php:75
 msgid "Footer Column V"
 msgstr ""
 
@@ -481,7 +481,7 @@ msgstr ""
 #. Name of the theme
 #: template-parts/footer/footer-copyright.php:11
 #: template-parts/footer/footer-copyright.php:17
-msgid "Acoustics"
+msgid "pixeep"
 msgstr ""
 
 #: template-parts/footer/footer-copyright.php:13
@@ -521,13 +521,13 @@ msgstr ""
 
 #. Description of the theme
 msgid ""
-"Acoustics is an modern eCommerce WordPress theme with pixel perfect design "
+"pixeep is an modern eCommerce WordPress theme with pixel perfect design "
 "and extensive functionality to create your own professional and unique "
 "online store."
 msgstr ""
 
 #. URI of the theme
-msgid "https://www.codegearthemes.com/products/acoustics"
+msgid "https://www.codegearthemes.com/products/pixeep"
 msgstr ""
 
 #. Author of the theme

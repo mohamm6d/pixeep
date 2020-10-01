@@ -22,7 +22,8 @@ body {
 	margin: -20px 0 0 0;
 	display: block;
 	text-align: left;
-	color: #555;
+	color: #000;
+	font-weight: bold;
 }
 
 /*.single-product div.product .woocommerce-product-gallery .flex-control-thumbs{
@@ -56,7 +57,7 @@ border:none;
 
 .site-header .header--default .header-inner .site-branding a img {
 	width: 180px;
-	margin-top: 5px;
+	margin-top: 1px;
 }
 
 .label {
@@ -68,9 +69,8 @@ border:none;
 	font-size: 14px;
 	text-decoration: none;
 	color: #000;
-	font-weight: bold;
-	margin-top: 0;
-	font-size: 12px;
+	margin-top: 15px;
+	font-size: 11px;
 	letter-spacing: 0.3px;
 	text-align: center;
 	text-transform: uppercase;
@@ -515,6 +515,47 @@ ul.woocommerce-cart-form__contents {
 	}
 }
 
+.card-overlay{
+	position: fixed;
+	z-index:98;
+	background:rgba(0, 0, 0, 0.6);
+	top:0;
+	bottom:0;
+	left:0;
+	height:100%;
+	width:100%;
+	display:none;
+}
+.site-header-cart.focus .card-overlay{
+	display:block;
+}
+.widget_shopping_cart{
+	z-index:99;
+}
+.cart--link{
+	position: relative;
+	z-index: 97;
+}
+.mini-cart-header{
+	text-align: center;
+    border-bottom: 1px solid #eee;
+    margin:0rem -1.5rem 1rem -1.5rem;
+    padding: 0 15px 15px 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+}
+.mini-cart-header .close-icon{
+	float: right;
+	cursor: pointer;
+    width: 17px;
+    margin-top: -4px;
+}
+li.top-level-link a span{
+	font-weight: bold;
+	color:#000;
+}
+
 .site-header-cart .widget_shopping_cart .mini_cart_item .product-image {
 	display: none;
 }
@@ -588,9 +629,8 @@ body, button, input, optgroup, select, textarea {
 
 .section-featured .block-featured-main .btn {
 	display: block;
-	font-weight: bold;
 	font-size: 12px;
-	border: 1px solid #111 !important;
+	border:none !important;
 }
 
 .footer-block.col-md-2 a.gift-card-btn {
@@ -1297,7 +1337,7 @@ html {
 	}
 	.site-header a.account-icon, .site-header a.wishlist-icon {
 		float: right;
-		margin-right: 3px !important;
+		margin-right: 25px !important;
 		margin-top: 1px !important;
 		margin-left: 2px !important;
 	}
@@ -1322,3 +1362,4 @@ html {
 html body.template-page {
 	scroll-behavior: smooth;
 }
+

@@ -4,7 +4,7 @@
  *
  * @author      CodeGearThemes
  * @category    WordPress
- * @package     Acoustics
+ * @package     pixeep
  * @subpackage  Controls
  * @since       1.0.0
  *
@@ -12,7 +12,7 @@
 if ( ! defined( 'ABSPATH' ) ) exit;
 
 if ( class_exists( 'WP_Customize_Control' ) ) {
-  class Acoustics_Customize_Control_Radio_Image extends WP_Customize_Control {
+  class pixeep_Customize_Control_Radio_Image extends WP_Customize_Control {
 
         public $type = 'radio-image';
 		/**

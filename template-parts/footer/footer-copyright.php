@@ -5,12 +5,12 @@
  *
  * @author      CodeGearThemes
  * @category    WordPress
- * @package     Acoustics
+ * @package     pixeep
  * @version     1.0.0
  *
  */
 
-$acoustics_copyright = get_theme_mod( 'acoustics_footer_copyright', '')
+$pixeep_copyright = get_theme_mod( 'pixeep_footer_copyright', '')
 ?>
 <div class="text-center accepted-payments">
 		<!--SVG Definition - Paste this into your SVGDefs.svg file-->
@@ -77,10 +77,10 @@ $acoustics_copyright = get_theme_mod( 'acoustics_footer_copyright', '')
  <div class="section-copyright text-center">
 	 <div class="container">
 		 <div class="site-info">
-		 	 <?php if( !empty( $acoustics_copyright ) ): ?>
-				<small><?php echo wp_kses_post( $acoustics_copyright ); ?></small>
+		 	 <?php if( !empty( $pixeep_copyright ) ): ?>
+				<small><?php echo wp_kses_post( $pixeep_copyright ); ?></small>
 			 <?php else: ?>
-				 <small><?php printf( __( '&copy; %1$s %2$s', 'acoustics' ), esc_attr( date_i18n( __( 'Y', 'acoustics' ) ) ), esc_attr( get_bloginfo( 'name' ) ) ); ?></small>
+				 <small><?php printf( __( '&copy; %1$s %2$s', 'pixeep' ), esc_attr( date_i18n( __( 'Y', 'pixeep' ) ) ), esc_attr( get_bloginfo( 'name' ) ) ); ?></small>
 			 <?php endif; ?>
 		 </div><!-- .site-info -->
 	 </div>

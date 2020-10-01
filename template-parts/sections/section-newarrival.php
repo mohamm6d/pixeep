@@ -5,7 +5,7 @@
  *
  * @author      CodeGearThemes
  * @category    WordPress
- * @package     Acoustics
+ * @package     pixeep
  * @version     1.0.0
  *
  */
@@ -13,17 +13,17 @@ if(! class_exists('Woocommerce')) {
 	return;
 }
 
-$acoustics_product_collection = get_theme_mod( 'acoustics_newarrival_collection' , 0 );
-if( $acoustics_product_collection != 0 ): ?>
+$pixeep_product_collection = get_theme_mod( 'pixeep_newarrival_collection' , 0 );
+if( $pixeep_product_collection != 0 ): ?>
 	<div id="section_newarrival_grid" class="section-products section--products-grid" type="newarrival">
 		<div class = "container">
 			<div class="section-heading">
 				<h3 class="section-title h4">
-					<span><?php esc_html_e( 'New Arrivals', 'acoustics' ); ?></span>
+					<span><?php esc_html_e( 'New Arrivals', 'pixeep' ); ?></span>
 				</h3>
 			</div>
 			<?php
-			if( $acoustics_product_collection){
+			if( $pixeep_product_collection){
 	            $args = array(
 	                'post_type' => 'product',
 	                'posts_per_page' => 9,
@@ -31,17 +31,17 @@ if( $acoustics_product_collection != 0 ): ?>
 						array(
 		                    'taxonomy' => 'product_cat',
 		                    'field' => 'term_id',
-		                    'terms' => $acoustics_product_collection
+		                    'terms' => $pixeep_product_collection
 						)
 	                  )
 	                );
-					$acoustics_product_query = new WP_Query( $args );
-					if( $acoustics_product_query->have_posts() ) { ?>
+					$pixeep_product_query = new WP_Query( $args );
+					if( $pixeep_product_query->have_posts() ) { ?>
 						<div class="woocommerce">
 							<div class="row products products-grid columns clearfix">
 								<?php
-								while( $acoustics_product_query->have_posts() ) {
-									$acoustics_product_query->the_post();
+								while( $pixeep_product_query->have_posts() ) {
+									$pixeep_product_query->the_post();
 									wc_get_template_part( 'content', 'product' );
 								} ?>
 							</div>
@@ -61,7 +61,7 @@ if( $acoustics_product_collection != 0 ): ?>
 				   	<?php }
 					wp_reset_postdata();
 				}else{ ?>
-					<div class="no-product"><?php esc_html_e('No Category Selected','acoustics'); ?> </div>
+					<div class="no-product"><?php esc_html_e('No Category Selected','pixeep'); ?> </div>
 				<?php
 			} ?>
 		</div>

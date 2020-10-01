@@ -733,7 +733,7 @@ input[type="datetime-local"],
 input[type="color"],
 textarea {
 	color: #666;
-	border: 1px solid #ccc;
+	border: 1px solid #eee;
 	border-radius: 3px;
 	padding: 10px;
 }
@@ -872,6 +872,7 @@ input[type="search"] {
 .site-header .header-navigation .header-cart {
 	display: table-cell;
 	width: 25%;
+	padding-left:5px;
 	vertical-align: middle;
 }
 
@@ -2044,6 +2045,7 @@ a:active {
 
 .section-featured figure {
 	margin: 0;
+	text-align: center;
 	position: relative;
 }
 
@@ -2066,16 +2068,21 @@ a:active {
 }
 
 .section-featured figcaption {
-	position: absolute;
-	top: 50%;
-	-webkit-transform: translate(0, -50%);
-	-moz-transform: translate(0, -50%);
-	-ms-transform: translate(0, -50%);
-	-o-transform: translate(0, -50%);
-	transform: translate(0, -50%);
-	left: 30px;
-	color: #fff;
-	z-index: 1;
+	width: 100%;
+    position: absolute;
+    bottom: 0;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    /* left: 30px; */
+    color: #fff;
+    z-index: 1;
+    left: 0;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
 }
 
 .section-featured .block-featured-main {
@@ -2091,12 +2098,14 @@ a:active {
 
 .section-featured .block-featured-main .btn {
 	display: block;
-	width: 150px;
-	padding: 10px 30px;
-	margin-top: 30px;
-	color: #000 !important;
-	background: #fff;
-	border-color: transparent;
+    width: 150px;
+    padding: 10px 30px;
+    margin-top: 30px;
+    color: #000 !important;
+    background: #fff;
+    border-color: transparent;
+    margin: 10px auto;
+    width: 100%;
 }
 
 .section-featured .block-featured-item {
@@ -2595,3 +2604,4 @@ object {
 .gallery-caption {
 	display: block;
 }
+

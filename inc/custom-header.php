@@ -10,7 +10,7 @@
  *
  * @author      CodeGearThemes
  * @category    WordPress
- * @package     Acoustics
+ * @package     pixeep
  * @version     1.0.0
  *
  */
@@ -18,30 +18,30 @@
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses acoustics_header_style()
+ * @uses pixeep_header_style()
  */
-function acoustics_custom_header_setup() {
-  add_theme_support( 'custom-header', apply_filters( 'acoustics_custom_header_args', array(
+function pixeep_custom_header_setup() {
+  add_theme_support( 'custom-header', apply_filters( 'pixeep_custom_header_args', array(
 		   'default-image'          => '',
 		   'default-text-color'     => '000000',
 		   'width'                  => 1500,
 		   'height'                 => 640,
 		   'flex-height'            => true,
 		   'flex-width'    			=> true,
-		   'wp-head-callback'       => 'acoustics_header_style',
+		   'wp-head-callback'       => 'pixeep_header_style',
 	   )
 	) );
 }
 
-add_action( 'after_setup_theme', 'acoustics_custom_header_setup' );
+add_action( 'after_setup_theme', 'pixeep_custom_header_setup' );
 
-if ( ! function_exists( 'acoustics_header_style' ) ) :
+if ( ! function_exists( 'pixeep_header_style' ) ) :
 	/**
 	 * Styles the header image and text displayed on the blog.
 	 *
-	 * @see acoustics_custom_header_setup().
+	 * @see pixeep_custom_header_setup().
 	 */
-	function acoustics_header_style() {
+	function pixeep_header_style() {
   	    $header_text_color = get_header_textcolor();
 
 		/*

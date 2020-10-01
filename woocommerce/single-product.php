@@ -26,7 +26,7 @@ get_header( 'shop' ); ?>
 		<div class="row">
 			<div class="col-xs-12 text-left">
 				<?php
-					do_action( 'acoustics_breadcrumb' );
+					do_action( 'pixeep_breadcrumb' );
 				?>
 			</div>
 		</div>

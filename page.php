@@ -11,14 +11,14 @@
  *
  * @author      CodeGearThemes
  * @category    WordPress
- * @package     Acoustics
+ * @package     pixeep
  * @version     1.0.0
  *
  */
 
 get_header();
-$acoustics_layout = get_theme_mod( 'acoustics_page_layout', 'no-sidebar' );
-$acoustics_class = acoustics_layout_classes( $acoustics_layout );
+$pixeep_layout = get_theme_mod( 'pixeep_page_layout', 'no-sidebar' );
+$pixeep_class = pixeep_layout_classes( $pixeep_layout );
 ?>
 <header class="section-page-header">
 	<div class="container">
@@ -27,7 +27,7 @@ $acoustics_class = acoustics_layout_classes( $acoustics_layout );
 				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 			</div>
 			<div class="col-md-6 text-right">
-				<?php acoustics_breadcrumb(); ?>
+				<?php pixeep_breadcrumb(); ?>
 			</div>
 		</div>
 	</div>
@@ -35,7 +35,7 @@ $acoustics_class = acoustics_layout_classes( $acoustics_layout );
 <div class="section-default section--page-template">
 	<div class="container">
 		<div class="row">
-			<section id="primary" class="section-primary <?php echo esc_attr( $acoustics_class ); ?>  col-xs-12 content-area">
+			<section id="primary" class="section-primary <?php echo esc_attr( $pixeep_class ); ?>  col-xs-12 content-area">
 				<main id="main" class="site-main">
 					<?php
 						while ( have_posts() ) :
@@ -53,7 +53,7 @@ $acoustics_class = acoustics_layout_classes( $acoustics_layout );
 				</main>
 			</section>
 			<?php
-				if( $acoustics_layout != 'no-sidebar' ):
+				if( $pixeep_layout != 'no-sidebar' ):
 					get_sidebar();
 				endif;
 			?>

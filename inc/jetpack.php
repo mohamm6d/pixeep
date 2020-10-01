@@ -6,7 +6,7 @@
  *
  * @author      CodeGearThemes
  * @category    WordPress
- * @package     Acoustics
+ * @package     pixeep
  * @version     1.0.0
  *
  */
@@ -18,11 +18,11 @@
  * See: https://jetpack.com/support/responsive-videos/
  * See: https://jetpack.com/support/content-options/
  */
-function acoustics_jetpack_setup() {
+function pixeep_jetpack_setup() {
   // Add theme support for Infinite Scroll.
 	add_theme_support( 'infinite-scroll', array(
 		'container' => 'main',
-		'render'    => 'acoustics_infinite_scroll_render',
+		'render'    => 'pixeep_infinite_scroll_render',
 		'footer'    => 'page',
 	) );
 
@@ -32,7 +32,7 @@ function acoustics_jetpack_setup() {
 	// Add theme support for Content Options.
 	add_theme_support( 'jetpack-content-options', array(
 		'post-details'    => array(
-			'stylesheet' => 'acoustics-style',
+			'stylesheet' => 'pixeep-style',
 			'date'       => '.posted-on',
 			'categories' => '.cat-links',
 			'tags'       => '.tags-links',
@@ -47,12 +47,12 @@ function acoustics_jetpack_setup() {
 	) );
 }
 
-add_action( 'after_setup_theme', 'acoustics_jetpack_setup' );
+add_action( 'after_setup_theme', 'pixeep_jetpack_setup' );
 
 /**
  * Custom render function for Infinite Scroll.
  */
-function acoustics_infinite_scroll_render() {
+function pixeep_infinite_scroll_render() {
   while ( have_posts() ) {
 		the_post();
 		if ( is_search() ): get_template_part( 'template-parts/content', 'search' );

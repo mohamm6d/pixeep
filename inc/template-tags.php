@@ -6,16 +6,16 @@
  *
  * @author      CodeGearThemes
  * @category    WordPress
- * @package     Acoustics
+ * @package     pixeep
  * @version     1.0.0
  *
  */
 
-if ( ! function_exists( 'acoustics_posted_on' ) ) :
+if ( ! function_exists( 'pixeep_posted_on' ) ) :
 	/**
 	 * Prints HTML with meta information for the current post-date/time.
 	 */
-	function acoustics_posted_on() {
+	function pixeep_posted_on() {
   $time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
 		if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
 			$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
@@ -30,7 +30,7 @@ if ( ! function_exists( 'acoustics_posted_on' ) ) :
 
 		$posted_on = sprintf(
 			/* translators: %s: post date */
-			__( '<span class="date-label"> </span>%s', 'acoustics' ),
+			__( '<span class="date-label"> </span>%s', 'pixeep' ),
 			'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 		);
 
@@ -39,15 +39,15 @@ if ( ! function_exists( 'acoustics_posted_on' ) ) :
 
 endif;
 
-if ( ! function_exists( 'acoustics_posted_by' ) ) :
+if ( ! function_exists( 'pixeep_posted_by' ) ) :
 	/**
 	 * Prints HTML with meta information for the current author.
 	 */
-	function acoustics_posted_by() {
+	function pixeep_posted_by() {
 		// Get the author name; wrap it in a link.
 		$byline = sprintf(
 			/* translators: %s: post author */
-			__( '<span class="author-label">By </span>%s', 'acoustics' ),
+			__( '<span class="author-label">By </span>%s', 'pixeep' ),
 			'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 		);
 
@@ -56,11 +56,11 @@ if ( ! function_exists( 'acoustics_posted_by' ) ) :
 
 endif;
 
-if ( ! function_exists( 'acoustics_entry_footer' ) ) :
+if ( ! function_exists( 'pixeep_entry_footer' ) ) :
 	/**
 	 * Prints HTML with meta information for the categories, tags and comments.
 	 */
-	function acoustics_entry_footer() {
+	function pixeep_entry_footer() {
 		// Hide category and tag text for pages.
 		if ( 'post' === get_post_type() ) {
 			/* translators: used between list items, there is a space after the comma */
@@ -68,7 +68,7 @@ if ( ! function_exists( 'acoustics_entry_footer' ) ) :
 			if ( $categories_list ) {
 				/* translators: 1: list of categories. */
 				printf( '<span class="cat-links">%1$s%2$s</span>',
-					sprintf( _x( '<span class="cat-text screen-reader-text">Categories</span>', 'Used before category names.', 'acoustics' ) ),
+					sprintf( _x( '<span class="cat-text screen-reader-text">Categories</span>', 'Used before category names.', 'pixeep' ) ),
 					$categories_list
 				);
 			}
@@ -78,7 +78,7 @@ if ( ! function_exists( 'acoustics_entry_footer' ) ) :
 			if ( $tags_list ) {
 				/* translators: 1: list of tags. */
 				printf( '<span class="tags-links">%1$s%2$s</span>',
-					sprintf( _x( '<span class="tags-text screen-reader-text">Tags</span>', 'Used before tag names.', 'acoustics' ) ),
+					sprintf( _x( '<span class="tags-text screen-reader-text">Tags</span>', 'Used before tag names.', 'pixeep' ) ),
 					$tags_list
 				);
 			}
@@ -90,7 +90,7 @@ if ( ! function_exists( 'acoustics_entry_footer' ) ) :
 				sprintf(
 					wp_kses(
 						/* translators: %s: post title */
-						__( 'Leave a Comment<span class="screen-reader-text"> on %s</span>', 'acoustics' ),
+						__( 'Leave a Comment<span class="screen-reader-text"> on %s</span>', 'pixeep' ),
 						array(
 							'span' => array(
 								'class' => array(),
@@ -107,7 +107,7 @@ if ( ! function_exists( 'acoustics_entry_footer' ) ) :
 			sprintf(
 				wp_kses(
 					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Edit <span class="screen-reader-text">%s</span>', 'acoustics' ),
+					__( 'Edit <span class="screen-reader-text">%s</span>', 'pixeep' ),
 					array(
 						'span' => array(
 							'class' => array(),
@@ -122,14 +122,14 @@ if ( ! function_exists( 'acoustics_entry_footer' ) ) :
 	}
 endif;
 
-if ( ! function_exists( 'acoustics_post_thumbnail' ) ) :
+if ( ! function_exists( 'pixeep_post_thumbnail' ) ) :
 	/**
 	 * Displays an optional post thumbnail.
 	 *
 	 * Wraps the post thumbnail in an anchor element on index views, or a div
 	 * element when on single views.
 	 */
-	function acoustics_post_thumbnail() {
+	function pixeep_post_thumbnail() {
 if ( post_password_required() || is_attachment() || ! has_post_thumbnail() ) {
 			return;
 }

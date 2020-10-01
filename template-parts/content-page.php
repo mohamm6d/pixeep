@@ -6,7 +6,7 @@
  *
  * @author      CodeGearThemes
  * @category    WordPress
- * @package     Acoustics
+ * @package     pixeep
  * @version     1.0.0
  *
  */
@@ -15,14 +15,14 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<?php acoustics_post_thumbnail(); ?>
+	<?php pixeep_post_thumbnail(); ?>
 
 	<div class="entry-content clearfix">
 		<?php
 		the_content();
 
 		wp_link_pages( array(
-			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'acoustics' ),
+			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'pixeep' ),
 			'after'  => '</div>',
 		) );
 		?>
@@ -35,7 +35,7 @@
 				sprintf(
 					wp_kses(
 						/* translators: %s: Name of current post. Only visible to screen readers */
-						__( 'Edit <span class="screen-reader-text">%s</span>', 'acoustics' ),
+						__( 'Edit <span class="screen-reader-text">%s</span>', 'pixeep' ),
 						array(
 							'span' => array(
 								'class' => array(),

@@ -4,7 +4,7 @@
  *
  * @author      CodeGearThemes
  * @category    WordPress
- * @package     Acoustics
+ * @package     pixeep
  * @version     1.0.0
  *
  **/
@@ -18,7 +18,7 @@ get_header();
 				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 			</div>
 			<div class="col-md-6 text-right">
-				<?php acoustics_breadcrumb(); ?>
+				<?php pixeep_breadcrumb(); ?>
 			</div>
 		</div>
 	</div>
